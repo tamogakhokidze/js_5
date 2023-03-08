@@ -42,12 +42,38 @@
 
 
 //task 7
+
+document.getElementById("firstdiv").classList.add("wrapper");
+
+let imageElement = document.createElement(image);
+imageElement.setAttribute(scr ="img/photo-1510414842594-a61c69b5ae57.avif", alt = " beachimage");
+
+
+
+let hElelemt = document.createElement (h2);
+hElelemt.setAttribute("class", "title");
+hElelemt.textContent ="image title";
+
+hElelemt.appendChild(imageElement);
+document.querySelector(.wrapper).appendChild(hElelemt);
+document.getElementById(firstdiv).appendChild(hElelemt);
+
+
 // შექმენით htmlში დივი, მიანიჭეთ id და ჯსდან ამ დივში დაამატეთ შემდეგი html სტრუქტურა:
 // <div class=“wraper”>
 //  <img src=“რაღაცა სურათის მისამართი დაამატეთ” alt=“image”>
 // <h2> image title </h2>
 // </div>
 // H2 ჯს დან დაუმატეთ წითელი ფონტის ფერი და ფროტის ზომა 30px
+
+
+//task 8
+let pElement = document.createElement(p);
+pElement.setAttribute("class", "text");
+pElement.innerText = "Hello";
+
+document.querySelectorAll(".test").appendChild(pElement);
+
 
 // შექმენით სამი დივი htmlში, მიანიჭეთ ერთიდაიგივე კლასის სახელი და ყველა დივში დაამატეთ ჯს-დან შემდეგი კოდი:
 // <p class=“text”> hello </p>
