@@ -15,7 +15,7 @@
 //task 3
 
 // let words = ['Madrid', 'Rome', 'Milan', 'Berlin'];
-// let newWords = words.filter (item => item.includes('M','m'));
+// let newWords = words.filter(item => item.includes('M') || item.includes('m'));
 
 // console.log(newWords);
 
@@ -34,30 +34,26 @@
 // let arr = [-1, -2, -3, 4].some((item) => item > 0);
 // console.log(arr);
 
-
 //task 6
 // let array =[23,45,32,5,87,7,3,98];
 // let maxNumber = array.sort((x, y) => y - x)[array.length - 1];
 // console.log(maxNumber);
 
-
 //task 7
 
 document.getElementById("firstdiv").classList.add("wrapper");
 
-let imageElement = document.createElement(image);
-imageElement.setAttribute(scr ="img/photo-1510414842594-a61c69b5ae57.avif", alt = " beachimage");
+let imageElement = document.createElement("img");
+imageElement.setAttribute("scr", "img/seashells-1337565_960_720.jpg");
+imageElement.setAttribute("alt", "beachimage");
 
-
-
-let hElelemt = document.createElement (h2);
+let hElelemt = document.createElement("h2");
 hElelemt.setAttribute("class", "title");
-hElelemt.textContent ="image title";
+hElelemt.textContent = "image title";
 
 hElelemt.appendChild(imageElement);
-document.querySelector(.wrapper).appendChild(hElelemt);
-document.getElementById(firstdiv).appendChild(hElelemt);
-
+// document.querySelector(".wrapper").appendChild(hElelemt);
+document.getElementById("firstdiv").appendChild(hElelemt);
 
 // შექმენით htmlში დივი, მიანიჭეთ id და ჯსდან ამ დივში დაამატეთ შემდეგი html სტრუქტურა:
 // <div class=“wraper”>
@@ -66,23 +62,18 @@ document.getElementById(firstdiv).appendChild(hElelemt);
 // </div>
 // H2 ჯს დან დაუმატეთ წითელი ფონტის ფერი და ფროტის ზომა 30px
 
-
 //task 8
-let pElement = document.createElement(p);
+
+let pElement = document.createElement("p");
 pElement.setAttribute("class", "text");
 pElement.innerText = "Hello";
 
 document.querySelectorAll(".test").appendChild(pElement);
 
-
 // შექმენით სამი დივი htmlში, მიანიჭეთ ერთიდაიგივე კლასის სახელი და ყველა დივში დაამატეთ ჯს-დან შემდეგი კოდი:
 // <p class=“text”> hello </p>
-
 
 //task 9
 // let array=[2,15,10,24];
 // let newArray = array.splice(2, 1);
 // console.log(array);
-
-
-
